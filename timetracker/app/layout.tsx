@@ -7,7 +7,9 @@ export default function RootLayout({
 }) {
     return (
         <html>
-            <head></head>
+            <head>
+                <title>Time Tracker</title>
+                </head>
             <body>
                 <Navbar></Navbar>
                 {children}
