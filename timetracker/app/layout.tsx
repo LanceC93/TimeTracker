@@ -1,4 +1,5 @@
 import Navbar from './_components/Navbar.js';
+import "./global.css"
 
 export default function RootLayout({
     children,
@@ -9,7 +10,7 @@ export default function RootLayout({
         <html>
             <head>
                 <title>Time Tracker</title>
-                </head>
+            </head>
             <body>
                 <Navbar></Navbar>
                 {children}

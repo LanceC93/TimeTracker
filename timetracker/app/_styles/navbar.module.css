@@ -1,3 +1,12 @@
+.bar {
+    padding: 12px;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: aqua;
+    margin-bottom: 16px;
+}
 .bar a{
     padding-right: 1em;
 }
