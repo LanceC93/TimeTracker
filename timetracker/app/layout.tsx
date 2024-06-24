@@ -12,7 +12,7 @@ export default function RootLayout({
                 <title>Time Tracker</title>
             </head>
             <body>
-                <Navbar></Navbar>
+                <Navbar/>
                 {children}
             </body>
         </html>

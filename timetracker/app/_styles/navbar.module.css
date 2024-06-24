@@ -4,9 +4,15 @@
     display: flex;
     align-items: center;
     height: 40px;
-    background-color: aqua;
+    background-color: black;
     margin-bottom: 16px;
 }
 .bar a{
     padding-right: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+.bar a:hover {
+    color: #A649B6;
 }

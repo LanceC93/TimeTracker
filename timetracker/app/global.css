@@ -9,6 +9,13 @@ body {
     height: auto;
     min-height: 100%;
 }
+h1 {
+    font-size: 64pt;
+    margin: 0px 0px 16px 16px;
+}
+.card-container {
+    display: flex;
+}
 .home-body {
     display: flex;
     flex-direction: column;
