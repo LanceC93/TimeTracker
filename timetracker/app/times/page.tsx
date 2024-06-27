@@ -1,5 +1,5 @@
 import '../global.css';
-import Card from "../_components/Card.js"
+import CardBox from "../_components/CardBox.js"
 
 //localhost:3000/times
 
@@ -8,8 +8,7 @@ export default function Times() {
         <div>
             <h1>Times</h1>
             <div className="card-container">
-                <Card/>
-                <Card/>
+                <CardBox/>
             </div>
         </div>
     );

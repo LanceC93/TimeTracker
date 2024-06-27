@@ -39,3 +39,26 @@ h1 {
 .home-body button {
     font-size: 18pt;
 }
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,label {
+    margin-top: 16px;
+}
+
+input[type="submit"] {
+    margin-top: 32px;
+    background-color: black;
+    color: white;
+    padding: .5em;
+}

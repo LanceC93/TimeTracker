@@ -1,10 +1,10 @@
 import styles from "../_styles/card.module.css";
 
-export default function Card() {
+export default function Card(props) {
     return(
     <div className={styles.card}>
-        <h2 className="title">Title</h2>
-        <p>0:37:57 recorded</p>
+        <h2 className="title">{props.title}</h2>
+        <p>{props.time} recorded</p>
     </div>
     );
 }
