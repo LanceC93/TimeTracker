@@ -6,7 +6,12 @@ import CardBox from "../_components/CardBox.js"
 export default function Times() {
     return (
         <div>
-            <h1>Times</h1>
+            <div className="sub-head">
+                <h1>Times</h1>
+                <a href="./create">
+                    <button className="time-button">+ Add Time</button>
+                </a>
+            </div>
             <div className="card-container">
                 <CardBox/>
             </div>

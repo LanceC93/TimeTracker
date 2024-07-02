@@ -11,7 +11,7 @@ body {
 }
 h1 {
     font-size: 64pt;
-    margin: 0px 0px 16px 16px;
+    margin: 0px 0px 0px 16px;
 }
 .card-container {
     display: flex;
@@ -33,11 +33,19 @@ h1 {
 .home-body h1 {
     font-size: 80pt;
     margin: 0;
-    margin: 0px 0px 64px 0px;
+    margin: 0px 0px 32px 0px;
 }
 
-.home-body button {
+.time-button {
+    background-color: black;
+    color: white;
     font-size: 18pt;
+    border: none;
+    padding: .5em;
+    border-radius: 15px;
+}
+.time-button:hover {
+    color:#A649B6   ;
 }
 
 .login{
@@ -50,6 +58,15 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.sub-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4em;
+    margin-bottom: 16px;
 }
 
 input,label {

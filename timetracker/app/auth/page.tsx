@@ -12,6 +12,7 @@ export default function Times() {
                 <input type="password" />
                 <input type="submit" value="Submit"/>
             </form>
+            <a>Sign Up</a>
         </div>
     );
 }

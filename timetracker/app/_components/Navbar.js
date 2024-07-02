@@ -1,19 +1,31 @@
+"use client";
 import Link from "next/link";
+import {signIn, signOut, useSession} from "next-auth/react";
 import styles from "../_styles/navbar.module.css";
 
-export default function Navbar() {
-    let logged = false; //for testing
-    let authButton = null;
-    if(logged) {
-        authButton = "Logged In";
-    } else {
-        authButton = "Sign In";
+function AuthButton() {
+    const {data: session} = useSession();
+
+    if(session) {
+        return (
+            <>
+                <button onClick={() => signOut()}>Sign Out</button>
+            </>
+        )
     }
+    return (
+        <>
+            <button onClick={() => signIn()}>Sign In</button>
+        </>
+    );
+}
+
+export default function Navbar() {
     return(
     <div className={styles.bar}>
         <Link href = "/">Home</Link>
         <Link href = "/times">Times</Link>
-        <Link href="../auth" style={{marginLeft:"auto"}}>{authButton}</Link>
+        <AuthButton/>
     </div>
     );
 }
