@@ -1,9 +1,16 @@
 import '../global.css';
-import CardBox from "../_components/CardBox.js"
+import CardBox from "../_components/CardBox.js";
+import {getServerSession} from 'next-auth';
+import {redirect} from 'next/navigation';
 
 //localhost:3000/times
 
-export default function Times() {
+export default async function Times() {
+    const session = await getServerSession();
+
+    if(!session || !session.user) {
+        redirect("/api/auth/signin");
+    }
     return (
         <div>
             <div className="sub-head">

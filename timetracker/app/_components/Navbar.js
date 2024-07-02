@@ -9,6 +9,7 @@ function AuthButton() {
     if(session) {
         return (
             <>
+                <Link href = "/times">Times</Link>
                 <button onClick={() => signOut()}>Sign Out</button>
             </>
         )
@@ -24,7 +25,6 @@ export default function Navbar() {
     return(
     <div className={styles.bar}>
         <Link href = "/">Home</Link>
-        <Link href = "/times">Times</Link>
         <AuthButton/>
     </div>
     );
