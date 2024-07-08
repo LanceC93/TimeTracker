@@ -60,6 +60,15 @@ h1 {
     align-items: center;
 }
 
+.new-time {
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.new-time input[type="time"] {
+    margin-left: 1em;
+    margin-right: 1em;
+}
 .sub-head {
     display: flex;
     flex-direction: row;
@@ -78,4 +87,6 @@ input[type="submit"] {
     background-color: black;
     color: white;
     padding: .5em;
+    border: none;
+    border-radius: 16px;
 }
