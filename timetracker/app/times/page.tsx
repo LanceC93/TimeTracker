@@ -6,11 +6,12 @@ import {redirect} from 'next/navigation';
 //localhost:3000/times
 
 export default async function Times() {
-    const session = await getServerSession();
+    /*const session = await getServerSession();
 
     if(!session || !session.user) {
         redirect("/api/auth/signin");
-    }
+    }*/
+   
     return (
         <div>
             <div className="sub-head">

@@ -1,9 +1,8 @@
 "use client";
-
 import "../global.css";
 import {getServerSession} from 'next-auth';
 import {redirect} from 'next/navigation';
-import React, {useState} from 'react';
+import React from 'react';
 
 export default async function create() {
     const handleSubmit = async (event) => {
@@ -23,11 +22,11 @@ export default async function create() {
         }
     };
 
-    const session = await getServerSession();
+    /*const session = await getServerSession();
 
     if(!session || !session.user) {
         redirect("/api/auth/signin");
-    }
+    }*/
 
     
     return(
@@ -38,7 +37,7 @@ export default async function create() {
                 <label>Start Time</label>
                 <input type="time" name="startTime" required></input>
                 <label>Stop Time</label>
-                <input type="time" name="stopTime" required></input><br/>
+                <input type="time" name="endTime" required></input><br/>
                 <input type="submit" value={"Submit"}></input>
             </form>
         </div>

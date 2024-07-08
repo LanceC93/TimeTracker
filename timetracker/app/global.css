@@ -90,3 +90,11 @@ input[type="submit"] {
     border: none;
     border-radius: 16px;
 }
+
+input[type="submit"]:hover {
+    color:#A649B6;
+}
+
+input[type="submit"]:active {
+    background-color: grey;
+}
